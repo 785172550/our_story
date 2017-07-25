@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+<style type="text/css"><!--
+.STYLE1 {font-size: 30px;color: #fff;font-family: "微软雅黑";}
+.STYLE3 {font-size: 18px;color: #fff;font-family: "微软雅黑";}
+.STYLE5 {font-size: 18px;color: #fff;font-family: "微软雅黑";}
+--></style>
+<noscript>
+<link rel="stylesheet" type="text/css" href="css/styleNoJS.css"/>
+</noscript>
+<title>My Heart</title>
+</head>
+<body>
+<div class="container demo-1">
+<div id="slider" class="sl-slider-wrapper">
+<div class="sl-slider">
+ 
+<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+<div class="sl-slide-inner">
+<div class="juz">
+<iframe src="love/love.htm" width="100%" height="100%" frameborder="0"scrolling="auto"></iframe>
+</div>
+					  </div>
+					</div>
+					
+					
+					
+					<!--第二个页面-->
+					<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+						
+							<h2>笨蛋老婆</h2>
+							<blockquote><p><span class="STYLE3">我们在一起真的好开心</span></cite></blockquote>
+						</div>
+					</div>
+										
+					
+					<!--第三个页面-->
+					<div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							
+							<h2 class="STYLE1">虽然</h2>
+							<blockquote><p><span class="STYLE3">我们一直相隔两地，并不能经常的在一起</span></cite></blockquote>
+						</div>
+					</div>
+					
+					<!--第四个页面-->
+					<div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+						
+							<h2>但是</h2>
+							<blockquote><p class="STYLE3">我们却勇敢的面对这一切，一直相爱着</p>
+							<cite></cite></blockquote>
+						</div>
+					</div>
+									
+				<!--第五个页面-->
+					<div class="sl-slide bg-11" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							
+							<h2 class="STYLE1 STYLE1">我相信</h2>
+							<blockquote><p><span class="STYLE5">熬过这段年少轻狂，我们会很幸福的在一起，</span></cite></blockquote>
+					  </div>
+					</div>
+					
+					<!--第六个页面-->
+					<div class="sl-slide bg-12" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+						
+							<h2>答应过</h2>
+							<blockquote><p><span class="STYLE3">带你去天涯海角看那最美丽的风景</span></cite></blockquote>
+						</div>
+					</div>
+										
+					
+					<!--第七个页面-->
+					<div class="sl-slide bg-13" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							
+							<h2 class="STYLE1">等着我</h2>
+							<blockquote><p><span class="STYLE3">亲自为你戴上戒指，穿上嫁衣</span></cite></blockquote>
+						</div>
+					</div>
+					
+					
+	
+                    
+                    <!--第五个页面-->
+					<div class="sl-slide" >
+				
+                    <iframe src="indexsecond.html" width="100%" height="100%" frameborder="0"scrolling="auto"></iframe>
+
+                    <!--嵌入的HTML地址-->
+				
+					</div>
+		      </div>
+                
+                
+                
+<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>				</nav>
+
+		<!--		<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</nav>
+                -->
+                
+                
+
+
+		  </div>
+
+        </div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ),
+						$nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+								
+								slitslider.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+
+
+			});
+		</script>
+	    <audio src="http://www.hunlipic.com/love/mp3/hunlipic.com.mp3" autoplay="autoplay">
+</audio>	
+	</body>
+</html>
