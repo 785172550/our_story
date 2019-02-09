@@ -1,9 +1,9 @@
 # our_story
 
-曼,
+Hi 曼,
 
-it's for you ==> https://785172550.github.io/our_story/
+it's for you ==> https://785172550.github.io/our_story/ , hope you like it. 
 
 yours sincerely,
 
-sean785172550@gmail.com
+_Hang_ :)
